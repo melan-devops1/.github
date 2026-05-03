@@ -11,7 +11,7 @@
 ## 🎯 프로젝트 한눈에 보기
 
 Spring Boot 기반 이커머스 마이크로서비스를 AWS EKS 위에 배포하고,
-**IaC → CI/CD → GitOps → Observability → Service Mesh** 로 이어지는
+**IaC → CI/CD → GitOps → Observability** 로 이어지는
 End-to-End DevOps 파이프라인을 구축했습니다.
 
 ### 👉 [전체 개요 & 아키텍처 보러가기](https://github.com/melan-devops1/portfolio-overview)
@@ -35,7 +35,6 @@ End-to-End DevOps 파이프라인을 구축했습니다.
 **Orchestration** · Kubernetes · Helm · Kustomize
 **CI/CD** · GitHub Actions · ArgoCD (GitOps)
 **Observability** · Prometheus · Grafana · EFK Stack · Jaeger
-**Service Mesh** · Istio · Nginx Ingress Controller
 **Application** · Spring Boot 3 · PostgreSQL
 
 ---
@@ -52,7 +51,6 @@ Manifest Repo Update (Image Tag Bump)
 ArgoCD (GitOps Sync)
       ↓
 AWS EKS Cluster
-├── Istio Service Mesh (mTLS, Canary)
 ├── Spring Microservices (product/order/payment)
 ├── Prometheus + Grafana (Metrics)
 ├── EFK Stack (Logs)
